@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html color-mode="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+       Danil 
+    </title>
+    <script>
+      if (
+        localStorage.getItem("color-mode") === "dark" ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+          !localStorage.getItem("color-mode"))
+      ) {
+        document.documentElement.setAttribute("color-mode", "dark");
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/avatar.webp" />
+    <meta
+      name="description"
+      content="Danil's portfolio website showcasing GitHub projects."
+    />
+    <script type="module" crossorigin src="/assets/index.193ed368.js"></script>
+    <link rel="stylesheet" href="/assets/index.8e0b01b9.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Dark Mode Toggle  -->
+      <div class="color-mode-toggle">
+        <button
+          class="color-mode-btn light--hidden"
+          aria-label="Toggle light mode"
+        >
+          <svg class="icon-sun">
+            <use xlink:href="/svg/svg-defs.svg#sun" />
+          </svg>
+        </button>
+        <button
+          class="color-mode-btn dark--hidden"
+          aria-label="Toggle dark mode"
+        >
+          <svg class="icon-moon">
+            <use xlink:href="/svg/svg-defs.svg#moon" />
+          </svg>
+        </button>
+      </div>
+      <!-- 
+        Name Block
+        -->
+      <div id="name-block">
+         Danil 
+      </div>
+      <!-- 
+        Navigation Block
+        -->
+      <div id="nav-block">
+        <span id="projects" class="nav-selected"> Projects </span>
+      </div>
+      <!-- 
+        Profile Block
+        -->
+      <div id="pf-img-container">
+        <img
+          id="pf-img-source"
+          src="/images/avatar.webp"
+          alt="Profile Avatar"
+        />
+        <img
+          id="pf-img-shadow"
+          src="/images/avatar.webp"
+          alt="Profile Avatar Shadow"
+        />
+      </div>
+      <div id="pf-info-container">
+        <div id="pf-info-bio">Backend Developer</div>
+
+        <div id="pf-info-links">
+          <!-- Github, Location, Company, LinkedIn, Twitter info goes here -->
+          <div id="pf-info-github">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="/svg/svg-defs.svg#github" />
+            </svg>
+            <a target="_blank" href="https://github.com/dajeo">
+              <span>dajeo</span>
+            </a>
+          </div>
+ 
+          <div id="pf-info-company">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="/svg/svg-defs.svg#users" />
+            </svg>
+            <span>@Toscale-platform</span>
+          </div>
+                      </div>
+      </div>
+      <!-- Repository Block -->
+      <div id="repo-block">
+
+        <div id="repo-grid" class="grid">
+          <!-- repository cards go here -->
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Java</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/dajeo/Module">
+                <span class="repo-title">
+ Module
+                </span>
+                <span class="repo-desc">
+                      Multipurpose Discord bot for your server!
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>C#</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/dajeo/HCWeb.NET">
+                <span class="repo-title">
+ HCWeb.NET
+                </span>
+                <span class="repo-desc">
+                      Rewritten HCWeb blog in C# and ASP.NET
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>2</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Kotlin</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/dajeo/EclipseAndroid">
+                <span class="repo-title">
+ EclipseAndroid
+                </span>
+                <span class="repo-desc">
+                      The Dashboard on Android for the bot with name Eclipse 
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>TypeScript</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/dajeo/knight-nest">
+                <span class="repo-title">
+ knight-nest
+                </span>
+                <span class="repo-desc">
+                      Backend for chess social network Knight
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>2</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Dart</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/dajeo/reiodart">
+                <span class="repo-title">
+ reiodart
+                </span>
+                <span class="repo-desc">
+                      Reio is a progressive Dart framework for creating UI on the web. Uses HTML, CSS and Dart, which is compiled into efficient JavaScript code
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>2</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Vue</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/dajeo/mail-go">
+                <span class="repo-title">
+ mail-go
+                </span>
+                <span class="repo-desc">
+                      Created at gunpoint
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Vue</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/dajeo/dajeo.github.io">
+                <span class="repo-title">
+ dajeo.github.io
+                </span>
+                <span class="repo-desc">
+                      dajeo portfolio
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Go</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/dajeo/go-gin-boilerplate">
+                <span class="repo-title">
+                  <svg class="icon-fork">
+                    <use xlink:href="/svg/svg-defs.svg#fork"></use>
+                  </svg>
+                   go-gin-boilerplate
+                </span>
+                <span class="repo-desc">
+                      A starter project with Golang, Gin, JWT authentication, Swagger, PostgreSQL and Redis
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Dart</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/dajeo/reiodart-demo">
+                <span class="repo-title">
+ reiodart-demo
+                </span>
+                <span class="repo-desc">
+                      Template with a demo version of Reio features. Reio is a progressive Dart framework for creating UI on the web.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Kotlin</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/dajeo/refbound">
+                <span class="repo-title">
+ refbound
+                </span>
+                <span class="repo-desc">
+                      A simple link shortener written in Kotlin and Ktor with database SQLite
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    
+    <!-- Built using Portfolio (https://github.com/shaansubbaiah/Portfolio) -->
+  </body>
+</html>
